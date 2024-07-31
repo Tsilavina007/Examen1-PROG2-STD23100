@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class Playlist {
     private Personne proprietaire;
-    private int idChanson;
     private ArrayList<Chansons> chansonsList;
 
     public Playlist(Personne propietaire) {
@@ -47,7 +46,7 @@ public class Playlist {
         for (Chansons chansons : newChansonsList) {
             newPlaylist.addNewChansons(chansons);
         }
-        
+
         return newPlaylist;
     }
 

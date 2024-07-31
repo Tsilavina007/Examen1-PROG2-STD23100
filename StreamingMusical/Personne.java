@@ -1,7 +1,5 @@
 package StreamingMusical;
 
-import java.sql.Date;
-
 public class Personne {
     private String nom;
     private String prenom;
