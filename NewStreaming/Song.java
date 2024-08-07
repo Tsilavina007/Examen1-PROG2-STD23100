@@ -1,6 +1,5 @@
 package NewStreaming;
 
-import java.lang.reflect.Type;
 import java.time.Duration;
 import java.util.ArrayList;
 
@@ -11,6 +10,7 @@ public class Song {
     private ArrayList<Genre> genre;
     private Boolean isSingle;
     private ArrayList<Playlist> listPlaylistForThisSong;
+    private Album album;
 
     public Song(String id, String title, Duration durationSong, ArrayList<Genre> genre) {
         this.id = id;
@@ -19,6 +19,7 @@ public class Song {
         this.genre = genre;
         this.isSingle = true;
         this.listPlaylistForThisSong = new ArrayList<Playlist>();
+        this.album = null;
     }
 
     public String getId() {
@@ -59,6 +60,13 @@ public class Song {
 
     public ArrayList<Playlist> getListPlaylistForThisSong() {
         return listPlaylistForThisSong;
+    }
+
+    public Album getAlbum() {
+        return this.album;
+    }
+    public void setAlbum(Album album) {
+        this.album = album;
     }
 
     public void addToNewPlaylist(Playlist playlist) {

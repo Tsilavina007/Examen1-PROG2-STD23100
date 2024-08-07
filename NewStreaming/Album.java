@@ -52,12 +52,14 @@ public class Album {
     public void addSongList(ArrayList<Song> songList) {
         for (Song song : songList) {
             song.setIsSingle(false);
+            song.setAlbum(this);
         }
         this.songList.addAll(songList);
     }
 
     public void addSongToAlbum(Song song) {
         song.setIsSingle(false);
+        song.setAlbum(this);
         this.songList.add(song);
     }
 
