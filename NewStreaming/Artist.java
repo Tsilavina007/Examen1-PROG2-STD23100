@@ -17,8 +17,5 @@ public class Artist {
         this.startDate = startDate;
         this.nationality = nationality;
         this.albumList = new ArrayList<Album>();
-
     }
-
-
 }
