@@ -2,8 +2,6 @@ package NewStreaming;
 
 import java.util.ArrayList;
 
-import StreamingMusical.Chansons;
-
 public class Playlist {
     private User playlistProp;
     private ArrayList<Song> listSongs;

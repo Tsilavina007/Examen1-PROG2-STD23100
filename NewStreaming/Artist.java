@@ -2,8 +2,6 @@ package NewStreaming;
 
 import java.util.ArrayList;
 
-import StreamingMusical.Chansons;
-
 public class Artist {
     private String id;
     private String nameArtist;
@@ -54,5 +52,5 @@ public class Artist {
     public void setAlbumList(ArrayList<Album> albumList) {
         this.albumList = albumList;
     }
-    
+
 }
