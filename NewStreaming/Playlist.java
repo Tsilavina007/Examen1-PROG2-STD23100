@@ -12,4 +12,20 @@ public class Playlist {
         this.listSongs = listSongs;
     }
 
+    public User getPlaylistProp() {
+        return playlistProp;
+    }
+
+    public void setPlaylistProp(User playlistProp) {
+        this.playlistProp = playlistProp;
+    }
+
+    public ArrayList<Song> getListSongs() {
+        return listSongs;
+    }
+
+    public void setListSongs(ArrayList<Song> listSongs) {
+        this.listSongs = listSongs;
+    }
+
 }

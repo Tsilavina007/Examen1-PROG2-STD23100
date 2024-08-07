@@ -10,5 +10,13 @@ public class ArtistGroup extends Artist {
         super(id, nameArtist, startDate, nationality);
         this.listGroupArtist = listGroupArtist;
     }
+
+    public ArrayList<ArtistSolo> getListGroupArtist() {
+        return listGroupArtist;
+    }
+
+    public void setListGroupArtist(ArrayList<ArtistSolo> listGroupArtist) {
+        this.listGroupArtist = listGroupArtist;
+    }
     
 }

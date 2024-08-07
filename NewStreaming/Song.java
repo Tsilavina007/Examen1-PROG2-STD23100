@@ -18,4 +18,34 @@ public class Song {
         this.genre = genre;
         this.isSingle = true;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Duration getDurationSong() {
+        return durationSong;
+    }
+
+    public void setDurationSong(Duration durationSong) {
+        this.durationSong = durationSong;
+    }
+
+    public ArrayList<Genre> getGenre() {
+        return genre;
+    }
+
+    public void setGenre(ArrayList<Genre> genre) {
+        this.genre = genre;
+    }
+    
+    
 }
