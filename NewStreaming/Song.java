@@ -10,6 +10,7 @@ public class Song {
     private Duration durationSong;
     private ArrayList<Genre> genre;
     private Boolean isSingle;
+    private ArrayList<Playlist> listPlaylistForThisSong;
 
     public Song(String id, String title, Duration durationSong, ArrayList<Genre> genre) {
         this.id = id;
@@ -17,6 +18,7 @@ public class Song {
         this.durationSong = durationSong;
         this.genre = genre;
         this.isSingle = true;
+        this.listPlaylistForThisSong = new ArrayList<Playlist>();
     }
 
     public String getId() {
@@ -47,5 +49,25 @@ public class Song {
         this.genre = genre;
     }
     
+    public Boolean getIsSingle() {
+        return isSingle;
+    }
+
+    public void setIsSingle(Boolean isSingle) {
+        this.isSingle = isSingle;
+    }
+
+    public ArrayList<Playlist> getListPlaylistForThisSong() {
+        return listPlaylistForThisSong;
+    }
+
+    public void addToNewPlaylist(Playlist playlist) {
+        this.listPlaylistForThisSong.add(playlist);
+    }
+
+    public int getNumberOfPlaylistIncludeThisSong() {
+        return this.listPlaylistForThisSong.size();
+    }
+
     
 }

@@ -49,8 +49,18 @@ public class Album {
         return songList;
     }
 
-    public void setSongList(ArrayList<Song> songList) {
-        this.songList = songList;
+    public void addSongList(ArrayList<Song> songList) {
+        for (Song song : songList) {
+            song.setIsSingle(false);
+        }
+        this.songList.addAll(songList);
     }
+
+    public void addSongToAlbum(Song song) {
+        song.setIsSingle(false);
+        this.songList.add(song);
+    }
+
+
 
 }
